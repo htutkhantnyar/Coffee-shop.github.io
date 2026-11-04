@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique - Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Bean Boutique</a>
+
+                <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation menu"
+                    aria-expanded="false" aria-controls="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    <a href="coffee.html" class="nav-link">Coffee</a>
+                    <a href="equipment.html" class="nav-link">Equipment</a>
+                    <a href="offers.html" class="nav-link">Offers</a>
+                    <a href="event.html" class="nav-link">Event</a>
+                    <a href="cart.html" class="nav-link cart">Cart</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- HERO -->
+        <section class="hero">
+            <img src="./Images/Coffee-shop.jpg" alt="">
+            <div class="hero-content">
+                <p class="hero-subtitle">WELCOME TO</p>
+                <h1>Bean Boutique</h1>
+                <p class="hero-description">
+                    Fresh coffees, premium equipment, and exclusive offers for coffee enthusiasts.
+                </p>
+                <a href="coffee.html" class="hero-button">Explore Our Coffee</a>
+            </div>
+        </section>
+
+        <!-- INFO CARDS -->
+        <section class="info-cards" aria-label="What we offer">
+            <div class="info-card glass-card">
+                <i class="bi bi-cup-hot-fill info-icon" aria-hidden="true"></i>
+                <h2 class="info-card-title">Coffee</h2>
+                <p>Discover our blend of premium beans, ranging from light to dark and hot to iced.</p>
+            </div>
+            <div class="info-card glass-card">
+                <i class="bi bi-basket3-fill info-icon" aria-hidden="true"></i>
+                <h2 class="info-card-title">Equipment</h2>
+                <p>High-quality coffee equipment to elevate your brewing experience.</p>
+            </div>
+            <div class="info-card glass-card">
+                <i class="bi bi-tags-fill info-icon" aria-hidden="true"></i>
+                <h2 class="info-card-title">Offers</h2>
+                <p>Discover our exclusive deals and promotions for coffee lovers.</p>
+            </div>
+            <div class="info-card glass-card">
+                <i class="bi bi-calendar-event-fill info-icon" aria-hidden="true"></i>
+                <h2 class="info-card-title">Events</h2>
+                <p>Join us for special events and coffee tasting sessions.</p>
+            </div>
+        </section>
+
+        <!-- FEATURED CAROUSEL -->
+        <section class="featured-carousel" role="region" aria-roledescription="carousel"
+            aria-label="Featured highlights">
+
+            <div class="carousel-slides">
+                <div class="carousel-slide active" role="group" aria-roledescription="slide" aria-label="1 of 4">
+                    <img src="./Images/Cappuccino.jpg" alt="">
+                    <div class="carousel-overlay">
+                        <p>FEATURED COFFEE</p>
+                        <h2>Our Signature Blend</h2>
+                        <span>Rich, smooth, and roasted to perfection.</span>
+                        <a href="coffee.html">Explore Coffee</a>
+                    </div>
+                </div>
+
+                <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 4"
+                    aria-hidden="true">
+                    <img src="./Images/Featured-Event.jpg" alt="">
+                    <div class="carousel-overlay">
+                        <p>FEATURED EVENT</p>
+                        <h2>Coffee Tasting Evening</h2>
+                        <span>Discover new flavours and enjoy coffee with fellow enthusiasts.</span>
+                        <a href="event.html">View Event</a>
+                    </div>
+                </div>
+
+                <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 4"
+                    aria-hidden="true">
+                    <img src="./Images/Featured-Equipment.jpg" alt="">
+                    <div class="carousel-overlay">
+                        <p>FEATURED EQUIPMENT</p>
+                        <h2>Upgrade Your Brew</h2>
+                        <span>Premium equipment for a better brewing experience.</span>
+                        <a href="equipment.html">View Equipment</a>
+                    </div>
+                </div>
+
+                <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 of 4"
+                    aria-hidden="true">
+                    <img src="./Images/Featured-Offers.jpg" alt="">
+                    <div class="carousel-overlay">
+                        <p>SPECIAL OFFER</p>
+                        <h2>Something Special</h2>
+                        <span>Check out our latest offers made for coffee lovers.</span>
+                        <a href="offers.html">See Offers</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-button prev" type="button" aria-label="Previous slide">&#10094;</button>
+            <button class="carousel-button next" type="button" aria-label="Next slide">&#10095;</button>
+
+            <button class="carousel-pause" id="carouselPause" type="button"
+                aria-label="Pause automatic slide rotation">Pause</button>
+
+            <div class="carousel-dots" role="group" aria-label="Select a slide">
+                <button class="dot active" type="button" aria-label="Go to slide 1" aria-current="true"></button>
+                <button class="dot" type="button" aria-label="Go to slide 2"></button>
+                <button class="dot" type="button" aria-label="Go to slide 3"></button>
+                <button class="dot" type="button" aria-label="Go to slide 4"></button>
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section" aria-label="About Bean Boutique">
+            <div class="about-card glass-card">
+                <div class="about-content">
+                    <p class="section-label">ABOUT US</p>
+                    <h2>More Than Just Coffee</h2>
+                    <p>
+                        Bean Boutique is dedicated to providing the finest coffee experience. From excellent coffess to
+                        offering top-notch equipment, we cater to coffee enthusiasts who appreciate quality and learing
+                        to
+                        brew.
+                    </p>
+                </div>
+            </div>
+            <div class="about-card glass-card">
+                <div class="about-content">
+                    <p class="section-label">OUR PHILOSOPHY</p>
+                    <h2>Made for Good Moments</h2>
+                    <p>
+                        Bean Boutique believes that coffee is more than just a beverage; it's an experience. We strive
+                        to
+                        create moments of joy and connection through our carefully curated selection of coffees and
+                        equipment.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP -->
+        <section class="map-section" aria-labelledby="mapHeading">
+            <h2 id="mapHeading">Find Us</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.004420788375!2d96.1277287754218!3d16.826136783968515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194ca13fff6e3%3A0x1334ced7a53c5bbc!2sHledan%20Centre!5e0!3m2!1sen!2suk!4v1788431010427!5m2!1sen!2suk"
+                    title="Google Map showing the location of Bean Boutique at Hledan Centre" width="800" height="600"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer glass-card">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <p>Monday – Friday: 8:00 AM – 8:00 PM</p>
+                <p>Saturday – Sunday: 9:00 AM – 9:00 PM</p>
+            </div>
+
+            <div class="footer-brand">
+                <h2>Bean Boutique</h2>
+                <p>Fresh coffees, premium equipment, and exclusive offers for coffee enthusiasts.</p>
+            </div>
+
+            <div class="footer-column contact">
+                <h3>Contact</h3>
+                <p><strong>Location:</strong> Hledan Centre</p>
+                <p><strong>Email:</strong> hello@beanboutique.com</p>
+                <p><strong>Phone:</strong> +95 9 123 456 789</p>
+                <p><strong>Web:</strong> beanboutique.com</p>
+            </div>
+        </div>
+    </footer>
+    <!-- First Time Visitor -->
+    <div class="modal-overlay" id="visitorModal" role="dialog" aria-modal="true" aria-labelledby="visitorModalTitle"
+        aria-describedby="visitorModalDesc">
+        <div class="modal-box">
+            <span class="modal-icon" aria-hidden="true">&#9749;</span>
+            <h3 id="visitorModalTitle">Welcome to Bean Boutique</h3>
+            <p id="visitorModalDesc">Enter your email address and we'll send you a 10% discount code for your first
+                order.</p>
+
+            <form class="visitor-form" id="visitorForm">
+                <label class="sr-only" for="visitorEmail">Email address</label>
+                <input type="email" id="visitorEmail" name="email" placeholder="Enter your email address"
+                    autocomplete="email" required>
+                <button type="submit">Get My Discount</button>
+            </form>
+
+            <button type="button" class="visitor-skip" id="visitorSkip">No thanks, maybe later</button>
+        </div>
+    </div>
+
+    <!-- Thank-you box -->
+    <div class="modal-overlay" id="visitorThanks" role="dialog" aria-modal="true" aria-labelledby="visitorThanksTitle">
+        <div class="modal-box">
+            <span class="modal-icon" aria-hidden="true">&#10003;</span>
+            <h3 id="visitorThanksTitle">Thanks for Visiting!</h3>
+            <p class="visitor-code-label">Your discount code is</p>
+            <div class="visitor-code">WELCOME10</div>
+            <p>Use it at checkout to get 10% off your order.</p>
+            <button type="button" id="thanksClose">Start Shopping</button>
+        </div>
+    </div>
+
+    <script>
+        /* =========================
+           MOBILE NAVIGATION
+           ========================= */
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("navMenu");
+
+        hamburger.addEventListener("click", () => {
+            const isOpen = hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+            hamburger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+                hamburger.setAttribute("aria-expanded", "false");
+            });
+        });
+
+        /* =========================
+           FEATURED CAROUSEL
+           ========================= */
+        const carousel = document.querySelector(".featured-carousel");
+        const slides = document.querySelectorAll(".carousel-slide");
+        const dots = document.querySelectorAll(".dot");
+        const prevButton = document.querySelector(".carousel-button.prev");
+        const nextButton = document.querySelector(".carousel-button.next");
+        const pauseButton = document.getElementById("carouselPause");
+
+        const prefersReducedMotion =
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        let slideIndex = 0;
+        let autoplayTimer = null;
+        let userPaused = false;
+
+        function showSlide(index) {
+            if (index >= slides.length) {
+                slideIndex = 0;
+            } else if (index < 0) {
+                slideIndex = slides.length - 1;
+            } else {
+                slideIndex = index;
+            }
+
+            slides.forEach((slide, i) => {
+                const isActive = i === slideIndex;
+                slide.classList.toggle("active", isActive);
+                slide.setAttribute("aria-hidden", isActive ? "false" : "true");
+            });
+
+            dots.forEach((dot, i) => {
+                const isActive = i === slideIndex;
+                dot.classList.toggle("active", isActive);
+                if (isActive) {
+                    dot.setAttribute("aria-current", "true");
+                } else {
+                    dot.removeAttribute("aria-current");
+                }
+            });
+        }
+
+        function changeSlide(direction) {
+            showSlide(slideIndex + direction);
+        }
+
+        function startAutoplay() {
+            if (prefersReducedMotion || userPaused) return;
+            stopAutoplay();
+            autoplayTimer = setInterval(() => changeSlide(1), 5000);
+        }
+
+        function stopAutoplay() {
+            if (autoplayTimer) {
+                clearInterval(autoplayTimer);
+                autoplayTimer = null;
+            }
+        }
+
+        prevButton.addEventListener("click", () => changeSlide(-1));
+        nextButton.addEventListener("click", () => changeSlide(1));
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener("click", () => showSlide(i));
+        });
+
+        pauseButton.addEventListener("click", () => {
+            userPaused = !userPaused;
+
+            if (userPaused) {
+                stopAutoplay();
+                pauseButton.textContent = "Play";
+                pauseButton.setAttribute("aria-label", "Start automatic slide rotation");
+            } else {
+                startAutoplay();
+                pauseButton.textContent = "Pause";
+                pauseButton.setAttribute("aria-label", "Pause automatic slide rotation");
+            }
+        });
+
+        // Give keyboard users control: stop rotating while focus is inside the carousel
+        carousel.addEventListener("focusin", stopAutoplay);
+        carousel.addEventListener("focusout", () => {
+            window.setTimeout(() => {
+                if (!carousel.contains(document.activeElement)) {
+                    startAutoplay();
+                }
+            }, 150);
+        });
+
+        // No automatic movement when the visitor prefers reduced motion
+        if (prefersReducedMotion) {
+            pauseButton.hidden = true;
+        }
+
+        showSlide(0);
+        startAutoplay();
+
+        /* =========================
+           FIRST-TIME VISITOR POPUP
+           ========================= */
+        const VISITOR_KEY = "beanBoutiqueVisitorSeen";
+
+        const visitorModal = document.getElementById("visitorModal");
+        const visitorThanks = document.getElementById("visitorThanks");
+        const visitorForm = document.getElementById("visitorForm");
+        const visitorEmail = document.getElementById("visitorEmail");
+        const visitorSkip = document.getElementById("visitorSkip");
+        const thanksClose = document.getElementById("thanksClose");
+
+        let lastFocused = null;
+
+        function openOverlay(overlay) {
+            lastFocused = document.activeElement;
+            overlay.classList.add("active");
+
+            const target = overlay.querySelector("input, button");
+            if (target) {
+                window.setTimeout(() => target.focus(), 100);
+            }
+        }
+
+        function closeOverlay(overlay) {
+            overlay.classList.remove("active");
+
+            if (lastFocused && typeof lastFocused.focus === "function" && document.contains(lastFocused)) {
+                lastFocused.focus();
+            }
+        }
+        // Show the popup only on the first visit, after the captcha is solved
+        if (!localStorage.getItem(VISITOR_KEY)) {
+            if (sessionStorage.getItem("beanBoutiqueCaptchaOk") === "1") {
+                window.setTimeout(() => openOverlay(visitorModal), 800);
+            } else {
+                window.addEventListener("captchaSolved", function () {
+                    window.setTimeout(() => openOverlay(visitorModal), 500);
+                }, { once: true });
+            }
+        }
+
+        // Email submitted
+        visitorForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            if (!visitorEmail.value.trim()) return;
+
+            localStorage.setItem(VISITOR_KEY, "1");
+            closeOverlay(visitorModal);
+
+            window.setTimeout(() => openOverlay(visitorThanks), 300);
+        });
+
+        // Skip the popup
+        visitorSkip.addEventListener("click", function () {
+            localStorage.setItem(VISITOR_KEY, "1");
+            closeOverlay(visitorModal);
+        });
+
+        // Close the thank-you box
+        thanksClose.addEventListener("click", function () {
+            closeOverlay(visitorThanks);
+        });
+
+        // Close popups by clicking the dark background
+        [visitorModal, visitorThanks].forEach(function (overlay) {
+            overlay.addEventListener("click", function (e) {
+                if (e.target === overlay) {
+                    localStorage.setItem(VISITOR_KEY, "1");
+                    closeOverlay(overlay);
+                }
+            });
+        });
+
+        document.addEventListener("keydown", function (e) {
+            const activeOverlay = document.querySelector(".modal-overlay.active");
+            if (!activeOverlay) return;
+
+            if (e.key === "Escape") {
+                localStorage.setItem(VISITOR_KEY, "1");
+                closeOverlay(activeOverlay);
+                return;
+            }
+
+            if (e.key === "Tab") {
+                const focusables = activeOverlay.querySelectorAll("button, input, a[href]");
+                if (!focusables.length) return;
+
+                const first = focusables[0];
+                const last = focusables[focusables.length - 1];
+
+                if (e.shiftKey && document.activeElement === first) {
+                    e.preventDefault();
+                    last.focus();
+                } else if (!e.shiftKey && document.activeElement === last) {
+                    e.preventDefault();
+                    first.focus();
+                }
+            }
+        });
+    </script>
+    <script>
+        /* =========================
+            CAPTCHA 
+           ========================= */
+        (function () {
+            var VERIFIED_KEY = "beanBoutiqueCaptchaOk";
+
+            function getNavigationType() {
+                try {
+                    var entries = performance.getEntriesByType("navigation");
+                    if (entries && entries.length && entries[0].type) {
+                        return entries[0].type;
+                    }
+                    if (performance.navigation) {
+                        var t = performance.navigation.type;
+                        if (t === 1) return "reload";
+                        if (t === 2) return "back_forward";
+                    }
+                } catch (err) { }
+                return "navigate";
+            }
+
+            var navType = getNavigationType();
+
+            if (navType === "reload") {
+                sessionStorage.removeItem(VERIFIED_KEY);
+            }
+
+            if (sessionStorage.getItem(VERIFIED_KEY) === "1" && navType !== "reload") {
+                return;
+            }
+
+            var overlay = document.createElement("div");
+            overlay.className = "captcha-overlay";
+            overlay.id = "captchaOverlay";
+            overlay.setAttribute("role", "dialog");
+            overlay.setAttribute("aria-modal", "true");
+            overlay.setAttribute("aria-labelledby", "captchaTitle");
+
+            overlay.innerHTML = [
+                '<div class="captcha-box">',
+                '<span class="captcha-icon" aria-hidden="true">&#128274;</span>',
+                '<h3 id="captchaTitle">Quick Security Check</h3>',
+                '<p>Please confirm you&rsquo;re human before you can continue.</p>',
+                '<form id="captchaForm" novalidate>',
+                '<div class="captcha-challenge" id="captchaChallenge">',
+                '<span class="captcha-question" id="captchaQuestion">&nbsp;</span>',
+                '<button type="button" class="captcha-refresh" id="captchaRefresh"',
+                ' title="Get a new question" aria-label="Get a new question">&#8635;</button>',
+                '</div>',
+                '<input type="text" id="captchaAnswer" inputmode="numeric" autocomplete="off"',
+                ' aria-label="Answer" placeholder="Type your answer">',
+                '<p class="captcha-error" id="captchaError" role="alert"></p>',
+                '<button type="submit" id="captchaSubmit">Verify &amp; Continue</button>',
+                '</form>',
+                '</div>'
+            ].join("");
+
+            var formEl = overlay.querySelector("#captchaForm");
+            var questionEl = overlay.querySelector("#captchaQuestion");
+            var answerEl = overlay.querySelector("#captchaAnswer");
+            var errorEl = overlay.querySelector("#captchaError");
+            var refreshBtn = overlay.querySelector("#captchaRefresh");
+            var challengeEl = overlay.querySelector("#captchaChallenge");
+
+            var solution = 0;
+            var mounted = false;
+
+            function randomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            function newChallenge() {
+                var mode = randomInt(0, 2);
+                var a, b, text, answer;
+
+                if (mode === 2) {
+                    a = randomInt(2, 9);
+                    b = randomInt(2, 9);
+                    answer = a * b;
+                    text = a + " \u00D7 " + b;
+                } else if (mode === 1) {
+                    a = randomInt(6, 20);
+                    b = randomInt(1, a - 1);
+                    answer = a - b;
+                    text = a + " \u2212 " + b;
+                } else {
+                    a = randomInt(3, 15);
+                    b = randomInt(2, 12);
+                    answer = a + b;
+                    text = a + " + " + b;
+                }
+
+                solution = answer;
+                questionEl.textContent = text + " = ?";
+                answerEl.value = "";
+                errorEl.textContent = "";
+            }
+
+            function shake() {
+                challengeEl.classList.remove("captcha-shake");
+                void challengeEl.offsetWidth;
+                challengeEl.classList.add("captcha-shake");
+            }
+
+            function mount() {
+                if (mounted) return;
+                mounted = true;
+
+                document.body.appendChild(overlay);
+                document.body.classList.add("captcha-lock");
+                newChallenge();
+
+                void overlay.offsetWidth;
+                overlay.classList.add("active");
+
+                window.setTimeout(function () { answerEl.focus(); }, 320);
+            }
+
+            function close() {
+                overlay.classList.remove("active");
+                document.body.classList.remove("captcha-lock");
+
+                window.setTimeout(function () {
+                    if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+                }, 350);
+
+                window.dispatchEvent(new Event("captchaSolved"));
+            }
+
+            refreshBtn.addEventListener("click", function () {
+                newChallenge();
+                answerEl.focus();
+            });
+
+            formEl.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                var value = answerEl.value.trim();
+
+                if (!value) {
+                    errorEl.textContent = "Please type your answer.";
+                    shake();
+                    answerEl.focus();
+                    return;
+                }
+
+                if (parseInt(value, 10) === solution) {
+                    sessionStorage.setItem(VERIFIED_KEY, "1");
+                    close();
+                    return;
+                }
+
+                shake();
+                newChallenge();
+                errorEl.textContent = "Not quite \u2014 here\u2019s a new question. Try again.";
+                answerEl.focus();
+            });
+
+            if (document.body) {
+                mount();
+            } else {
+                document.addEventListener("DOMContentLoaded", mount);
+            }
+        })();
+    </script>
+</body>
+
+</html>

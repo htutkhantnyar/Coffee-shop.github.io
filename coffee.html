@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique - Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Bean Boutique</a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="coffee.html" class="nav-link active">Coffee</a>
+                <a href="equipment.html" class="nav-link">Equipment</a>
+                <a href="offers.html" class="nav-link">Offers</a>
+                <a href="event.html" class="nav-link">Event</a>
+                <a href="cart.html" class="nav-link cart">Cart</a>
+            </div>
+        </div>
+    </nav>
+    <main class="coffee-page">
+        <div class="coffee-search">
+            <input type="text" id="coffeeSearch" placeholder="Search coffee...">
+        </div>
+        <h1 class="page-title">Our Coffee Selection</h1>
+        <div class="coffee-grid">
+            <div class="coffee-card glass-card">
+                <img src="./Images/Espresso.jpg" alt="Espresso">
+                <div class="coffee-info">
+                    <h2>Espresso</h2>
+                    <p>A rich and concentrated shot with a bold coffee flavor.</p>
+                    <p><strong>Tasting Notes:</strong> Bold, bitter, nutty</p>
+                    <p><strong>Recommended:</strong> Espresso machine</p>
+                    <p><strong>Price:</strong> $3.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Americano.jpg" alt="Americano">
+                <div class="coffee-info">
+                    <h2>Americano</h2>
+                    <p>Espresso softened with hot water for a smooth finish.</p>
+                    <p><strong>Tasting Notes:</strong> Smooth, roasted, clean</p>
+                    <p><strong>Recommended:</strong> Pour-over</p>
+                    <p><strong>Price:</strong> $3.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Latte.jpg" alt="Latte">
+                <div class="coffee-info">
+                    <h2>Latte</h2>
+                    <p>Espresso combined with steamed milk and soft foam.</p>
+                    <p><strong>Tasting Notes:</strong> Creamy, sweet, mellow</p>
+                    <p><strong>Recommended:</strong> Espresso machine</p>
+                    <p><strong>Price:</strong> $3.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Cappuccino.jpg" alt="Cappuccino">
+                <div class="coffee-info">
+                    <h2>Cappuccino</h2>
+                    <p>A balanced combination of espresso, milk, and foam.</p>
+                    <p><strong>Tasting Notes:</strong> Rich, creamy, chocolatey</p>
+                    <p><strong>Recommended:</strong> Espresso machine</p>
+                    <p><strong>Price:</strong> $3.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Mocha.jpg" alt="Mocha">
+                <div class="coffee-info">
+                    <h2>Mocha</h2>
+                    <p>Espresso and chocolate blended with steamed milk.</p>
+                    <p><strong>Tasting Notes:</strong> Chocolate, sweet, creamy</p>
+                    <p><strong>Recommended:</strong> Espresso machine</p>
+                    <p><strong>Price:</strong> $4.49</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Flat-White.jpg" alt="Flat White">
+                <div class="coffee-info">
+                    <h2>Flat White</h2>
+                    <p>Velvety steamed milk balanced with a strong espresso base.</p>
+                    <p><strong>Tasting Notes:</strong> Smooth, rich, caramel</p>
+                    <p><strong>Recommended:</strong> Espresso machine</p>
+                    <p><strong>Price:</strong> $3.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Iced-Latte.jpg" alt="Iced Latte">
+                <div class="coffee-info">
+                    <h2>Iced Latte</h2>
+                    <p>Chilled espresso and cold milk served over ice.</p>
+                    <p><strong>Tasting Notes:</strong> Creamy, refreshing, sweet</p>
+                    <p><strong>Recommended:</strong> Espresso over ice</p>
+                    <p><strong>Price:</strong> $4.49</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Iced-Americano.jpg" alt="Iced Americano">
+                <div class="coffee-info">
+                    <h2>Iced Americano</h2>
+                    <p>Bold espresso chilled with cold water and ice.</p>
+                    <p><strong>Tasting Notes:</strong> Crisp, bold, roasted</p>
+                    <p><strong>Recommended:</strong> Espresso over ice</p>
+                    <p><strong>Price:</strong> $5.49</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Cold-Brew.jpg" alt="Cold Brew">
+                <div class="coffee-info">
+                    <h2>Cold Brew</h2>
+                    <p>Slow-steeped coffee with a naturally smooth taste.</p>
+                    <p><strong>Tasting Notes:</strong> Smooth, chocolatey, sweet</p>
+                    <p><strong>Recommended:</strong> Cold brew steeping</p>
+                    <p><strong>Price:</strong> $4.49</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Iced-Mocha.jpg" alt="Iced Mocha">
+                <div class="coffee-info">
+                    <h2>Iced Mocha</h2>
+                    <p>Chocolate, espresso, and milk served over ice.</p>
+                    <p><strong>Tasting Notes:</strong> Chocolate, creamy, sweet</p>
+                    <p><strong>Recommended:</strong> Espresso over ice</p>
+                    <p><strong>Price:</strong> $5.49</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Black-Coffee.jpg" alt="Black Coffee">
+                <div class="coffee-info">
+                    <h2>Black Coffee</h2>
+                    <p>Freshly brewed coffee with a clean and bold flavor.</p>
+                    <p><strong>Tasting Notes:</strong> Roasted, earthy, smooth</p>
+                    <p><strong>Recommended:</strong> French press</p>
+                    <p><strong>Price:</strong> $3.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="coffee-card glass-card">
+                <img src="./Images/Macchiato.jpg" alt="Macchiato">
+                <div class="coffee-info">
+                    <h2>Macchiato</h2>
+                    <p>Strong espresso finished with a small amount of milk.</p>
+                    <p><strong>Tasting Notes:</strong> Bold, caramel, creamy</p>
+                    <p><strong>Recommended:</strong> Espresso machine</p>
+                    <p><strong>Price:</strong> $4.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer glass-card">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <p>Monday – Friday: 8:00 AM – 8:00 PM</p>
+                <p>Saturday – Sunday: 9:00 AM – 9:00 PM</p>
+            </div>
+
+            <div class="footer-brand">
+                <h2>Bean Boutique</h2>
+                <p>Fresh coffees, premium equipment, and exclusive offers for coffee enthusiasts.</p>
+            </div>
+
+            <div class="footer-column contact">
+                <h3>Contact</h3>
+                <p><strong>Location:</strong> Hledan Centre</p>
+                <p><strong>Email:</strong> hello@beanboutique.com</p>
+                <p><strong>Phone:</strong> +95 9 123 456 789</p>
+                <p><strong>Web:</strong> beanboutique.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const CART_KEY = "beanBoutiqueCart";
+
+        function getCart() {
+            try {
+                const raw = localStorage.getItem(CART_KEY);
+                return raw ? JSON.parse(raw) : [];
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function saveCart(cart) {
+            localStorage.setItem(CART_KEY, JSON.stringify(cart));
+        }
+
+        function cartCount(cart) {
+            cart = cart || getCart();
+            return cart.reduce(function (s, i) { return s + (Number(i.qty) || 0); }, 0);
+        }
+
+        function updateCartCount() {
+            const cartLink = document.querySelector(".nav-link.cart");
+            if (!cartLink) return;
+            const count = cartCount();
+            const old = cartLink.querySelector(".cart-badge");
+            if (old) old.remove();
+            if (count > 0) {
+                const badge = document.createElement("span");
+                badge.className = "cart-badge";
+                badge.textContent = count > 99 ? "99+" : count;
+                cartLink.appendChild(badge);
+            }
+        }
+
+        function addToCart(item) {
+            const cart = getCart();
+            const existing = cart.find(function (i) {
+                return i.name === item.name && i.type === item.type;
+            });
+            if (existing) {
+                existing.qty += item.qty || 1;
+            } else {
+                cart.push({
+                    name: item.name,
+                    price: Number(item.price) || 0,
+                    image: item.image || "",
+                    type: item.type || "Item",
+                    qty: item.qty || 1,
+                });
+            }
+            saveCart(cart);
+            updateCartCount();
+            showAddedPopup(item.name);
+        }
+
+        function showAddedPopup(name) {
+            let modal = document.getElementById("addedModal");
+            if (!modal) {
+                document.body.insertAdjacentHTML("beforeend",
+                    '<div class="modal-overlay" id="addedModal">' +
+                    '<div class="modal-box">' +
+                    '<span class="modal-icon">&#10003;</span>' +
+                    '<h3>Added to Cart</h3>' +
+                    '<p id="addedMessage">Item added to your cart.</p>' +
+                    '<div class="modal-actions">' +
+                    '<button type="button" id="addedClose">Keep Shopping</button>' +
+                    '<a href="cart.html" class="modal-link">View Cart</a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>'
+                );
+                modal = document.getElementById("addedModal");
+                document.getElementById("addedClose").addEventListener("click", function () {
+                    modal.classList.remove("active");
+                });
+                modal.addEventListener("click", function (e) {
+                    if (e.target === modal) modal.classList.remove("active");
+                });
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape") modal.classList.remove("active");
+                });
+            }
+            const msg = document.getElementById("addedMessage");
+            if (msg) msg.textContent = '"' + name + '" was added to your cart.';
+            modal.classList.add("active");
+            clearTimeout(modal._hideTimer);
+            modal._hideTimer = setTimeout(function () {
+                modal.classList.remove("active");
+            }, 2500);
+        }
+
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("navMenu");
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+        document.querySelectorAll(".nav-link").forEach(function (link) {
+            link.addEventListener("click", function () {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
+        });
+
+        const search = document.getElementById("coffeeSearch");
+        const cards = document.querySelectorAll(".coffee-card");
+        search.addEventListener("input", function () {
+            const query = search.value.toLowerCase().trim();
+            cards.forEach(function (card) {
+                const n = card.querySelector("h2").textContent.toLowerCase();
+                card.style.display = n.includes(query) ? "flex" : "none";
+            });
+        });
+
+        cards.forEach(function (card) {
+            const btn = card.querySelector("button");
+            if (!btn) return;
+            btn.addEventListener("click", function () {
+                const name = card.querySelector("h2").textContent.trim();
+                const img = card.querySelector("img");
+                let price = 0;
+                card.querySelectorAll("p").forEach(function (p) {
+                    if (p.textContent.includes("Price:")) {
+                        const m = p.textContent.match(/([\d.]+)/);
+                        if (m) price = parseFloat(m[1]);
+                    }
+                });
+                addToCart({
+                    name: name,
+                    price: price,
+                    image: img ? img.getAttribute("src") : "",
+                    type: "Coffee",
+                    qty: 1,
+                });
+            });
+        });
+
+        updateCartCount();
+    </script>
+    <script>
+        /* =========================
+            CAPTCHA 
+           ========================= */
+        (function () {
+            var VERIFIED_KEY = "beanBoutiqueCaptchaOk";
+
+            function getNavigationType() {
+                try {
+                    var entries = performance.getEntriesByType("navigation");
+                    if (entries && entries.length && entries[0].type) {
+                        return entries[0].type;
+                    }
+                    if (performance.navigation) {
+                        var t = performance.navigation.type;
+                        if (t === 1) return "reload";
+                        if (t === 2) return "back_forward";
+                    }
+                } catch (err) { }
+                return "navigate";
+            }
+
+            var navType = getNavigationType();
+
+            if (navType === "reload") {
+                sessionStorage.removeItem(VERIFIED_KEY);
+            }
+
+            if (sessionStorage.getItem(VERIFIED_KEY) === "1" && navType !== "reload") {
+                return;
+            }
+
+            var overlay = document.createElement("div");
+            overlay.className = "captcha-overlay";
+            overlay.id = "captchaOverlay";
+            overlay.setAttribute("role", "dialog");
+            overlay.setAttribute("aria-modal", "true");
+            overlay.setAttribute("aria-labelledby", "captchaTitle");
+
+            overlay.innerHTML = [
+                '<div class="captcha-box">',
+                '<span class="captcha-icon" aria-hidden="true">&#128274;</span>',
+                '<h3 id="captchaTitle">Quick Security Check</h3>',
+                '<p>Please confirm you&rsquo;re human before you can continue.</p>',
+                '<form id="captchaForm" novalidate>',
+                '<div class="captcha-challenge" id="captchaChallenge">',
+                '<span class="captcha-question" id="captchaQuestion">&nbsp;</span>',
+                '<button type="button" class="captcha-refresh" id="captchaRefresh"',
+                ' title="Get a new question" aria-label="Get a new question">&#8635;</button>',
+                '</div>',
+                '<input type="text" id="captchaAnswer" inputmode="numeric" autocomplete="off"',
+                ' aria-label="Answer" placeholder="Type your answer">',
+                '<p class="captcha-error" id="captchaError" role="alert"></p>',
+                '<button type="submit" id="captchaSubmit">Verify &amp; Continue</button>',
+                '</form>',
+                '</div>'
+            ].join("");
+
+            var formEl = overlay.querySelector("#captchaForm");
+            var questionEl = overlay.querySelector("#captchaQuestion");
+            var answerEl = overlay.querySelector("#captchaAnswer");
+            var errorEl = overlay.querySelector("#captchaError");
+            var refreshBtn = overlay.querySelector("#captchaRefresh");
+            var challengeEl = overlay.querySelector("#captchaChallenge");
+
+            var solution = 0;
+            var mounted = false;
+
+            function randomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            function newChallenge() {
+                var mode = randomInt(0, 2);
+                var a, b, text, answer;
+
+                if (mode === 2) {
+                    a = randomInt(2, 9);
+                    b = randomInt(2, 9);
+                    answer = a * b;
+                    text = a + " \u00D7 " + b;
+                } else if (mode === 1) {
+                    a = randomInt(6, 20);
+                    b = randomInt(1, a - 1);
+                    answer = a - b;
+                    text = a + " \u2212 " + b;
+                } else {
+                    a = randomInt(3, 15);
+                    b = randomInt(2, 12);
+                    answer = a + b;
+                    text = a + " + " + b;
+                }
+
+                solution = answer;
+                questionEl.textContent = text + " = ?";
+                answerEl.value = "";
+                errorEl.textContent = "";
+            }
+
+            function shake() {
+                challengeEl.classList.remove("captcha-shake");
+                void challengeEl.offsetWidth;
+                challengeEl.classList.add("captcha-shake");
+            }
+
+            function mount() {
+                if (mounted) return;
+                mounted = true;
+
+                document.body.appendChild(overlay);
+                document.body.classList.add("captcha-lock");
+                newChallenge();
+
+                void overlay.offsetWidth;
+                overlay.classList.add("active");
+
+                window.setTimeout(function () { answerEl.focus(); }, 320);
+            }
+
+            function close() {
+                overlay.classList.remove("active");
+                document.body.classList.remove("captcha-lock");
+
+                window.setTimeout(function () {
+                    if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+                }, 350);
+
+                window.dispatchEvent(new Event("captchaSolved"));
+            }
+
+            refreshBtn.addEventListener("click", function () {
+                newChallenge();
+                answerEl.focus();
+            });
+
+            formEl.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                var value = answerEl.value.trim();
+
+                if (!value) {
+                    errorEl.textContent = "Please type your answer.";
+                    shake();
+                    answerEl.focus();
+                    return;
+                }
+
+                if (parseInt(value, 10) === solution) {
+                    sessionStorage.setItem(VERIFIED_KEY, "1");
+                    close();
+                    return;
+                }
+
+                shake();
+                newChallenge();
+                errorEl.textContent = "Not quite \u2014 here\u2019s a new question. Try again.";
+                answerEl.focus();
+            });
+
+            if (document.body) {
+                mount();
+            } else {
+                document.addEventListener("DOMContentLoaded", mount);
+            }
+        })();
+    </script>
+</body>
+
+</html>
